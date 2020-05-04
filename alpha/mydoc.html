@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>MATCH & CATCH</title>	
+<style>
+body{
+background-image:url("screen-0.jpg");
+background-repeat:no-repeat;
+background-position:center;
+background-color:Ivory;
+}
+container{
+
+}
+.btn{
+background-color:skyblue;
+border-style:solid;
+color:Crimson;
+font-size:35px;
+font-weight:bold;
+padding:25px;
+width:255px;
+position:fixed;
+top:322px;
+left:600px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<button class="btn" onclick="makesound()">PLAY</button>
+<script>
+function makesound(){
+	var sound = new Audio('censoredbeep.mp3')
+	sound.play();
+	sound.onended = function(){
+	location.href='Level1.html';
+	}
+}
+</script>
+</div>
+</body>
+</html>
